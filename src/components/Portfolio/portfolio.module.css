@@ -1,0 +1,68 @@
+.portfolioSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.projects {
+  background-color: rgb(39, 41, 41);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  max-width: 376px;
+  width: 55vw;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px rgba(0, 225, 255, 0.36);
+  margin: 10px;
+  color: rgb(255, 255, 255);
+}
+.bgimage {
+  max-width: 376px;
+  width: 55vw;
+  max-height: 220px;
+  height: 44vw;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.projects .data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 10px;
+  padding: 0;
+  padding: 5px 0;
+}
+
+.projects .data h3 {
+  margin: 0;
+  padding: 0px;
+}
+
+.projects .data p {
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.link {
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #63caff;
+  color: #63caff;
+  padding: 5px;
+  margin: 5px 0;
+}
