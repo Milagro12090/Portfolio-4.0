@@ -2,7 +2,7 @@
   "homepage": "http://Milagro12090.github.io/Portfolio-4.0",
   "name": "tiny_animation",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
