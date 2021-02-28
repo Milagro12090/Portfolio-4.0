@@ -9,7 +9,7 @@ export const data = [
   name: "spotifind",
   details: "This was another collaboration where we created an app where you can listen to songs from spotify.",
   link: "https://nickkeller316.github.io/Project1/",
-  image: "./images/projects/Spotifinder.png",
+  image: "./images/projects/spotifinder.png",
 },
 {
   name: "Note taking app",
