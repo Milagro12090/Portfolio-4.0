@@ -1,12 +1,15 @@
-
+//importing react, web animations for bounce in left/right
 import React from "react";
 import useWebAnimations, {
   bounceInLeft,
   bounceInRight,
 } from "@wellyshen/use-web-animations";
+//import css hero
 import styles from "./hero.module.css";
 
 const HeroContainer = () => {
+  //call bounce animations
+  // also calling header.svg at 27
   const { ref: refRight } = useWebAnimations({ ...bounceInRight });
   const { ref: refLeft } = useWebAnimations({ ...bounceInLeft });
   return (

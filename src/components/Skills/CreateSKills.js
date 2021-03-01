@@ -1,12 +1,15 @@
+//import react
 import React from "react";
-
+//import @matierial-ui/core,styles and colors
 import { Paper, Container, SvgIcon } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import * as colors from "@material-ui/core/colors";
+//import icon from @matierial-ui core icon
 import Icon from "@material-ui/core/Icon";
-
+//defining spacing and sizing styling for skill cards
 function CreateSKills({ skills, size }) {
   const useStyles = makeStyles((theme) => ({
+   //root apcing and display
     root: {
       display: "flex",
       flexWrap: "wrap",
@@ -22,6 +25,7 @@ function CreateSKills({ skills, size }) {
         margin: theme.spacing(2),
       },
     },
+    //paper coloring, alignment and transition for hover 
     paper: {
       display: "flex",
       width: size,
@@ -32,23 +36,24 @@ function CreateSKills({ skills, size }) {
       borderRadius: "50%",
       margin: "1vw",
       backgroundColor: "rgb(39, 41, 41)",
+      //hover transition-------
       transition: theme.transitions.create(["transform", "scale"], {
         duration: (theme.transitions.duration = "1s"),
         easing: "cubic-bezier(.39,.84,.65,.21)",
       }),
       "&:hover": {
         transform: "scale(1.3)",
+        //---------
       },
     },
   }));
-
+//define clases for development skills 
   const classes = useStyles();
   return (
     <Container className={classes.root}>
-      {/* ALSO CAN APPLY CLASSES LIKE THIS => classes={{ root: classes.paper }} */}
       {skills.map((item, index) => {
         const color = item.color;
-
+        
         if (item.name === "kubernetes") {
           return (
             <Paper key={index - 1} className={classes.paper} elevation={3}>
@@ -57,13 +62,7 @@ function CreateSKills({ skills, size }) {
               </SvgIcon>
             </Paper>
           );
-        } else if (item.name === "xd")
-          return (
-            <Paper key={index - 1} className={classes.paper} elevation={3}>
-              <span className="flaticon-experience color"></span>
-            </Paper>
-          );
-        else if (item.name === "photoshop")
+        } else if (item.name === "photoshop")
           return (
             <Paper key={index - 1} className={classes.paper} elevation={3}>
               <span className="flaticon-adobe-photoshop"></span>;

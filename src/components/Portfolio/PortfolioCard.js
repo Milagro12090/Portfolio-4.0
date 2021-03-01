@@ -1,6 +1,7 @@
+//import react and portfolio.css
 import React from "react";
 import styles from "./portfolio.module.css";
-
+//inline styling for how the picture fits in the card
 function PortfolioCard(props) {
   const inlineStyles = {
     backgroundImage: `url("${props.data.image}")`,
@@ -8,7 +9,7 @@ function PortfolioCard(props) {
     backgroundPosition: "center center",
     backgroundSize: "contain",
   };
-
+//html setup for portfoliocard calling all data from data.js
   return (
     <div key={props.index} className={styles.projects}>
       <div className={styles.bgimage} style={inlineStyles}></div>

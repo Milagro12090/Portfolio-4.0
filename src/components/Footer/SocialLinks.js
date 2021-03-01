@@ -1,6 +1,7 @@
-
+//import react, footer css
 import React from "react";
 import "./footer.css";
+//linking picture links for git, linkedin, fb, and instagram
 function SocialLinks() {
   return (
     <div

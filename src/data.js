@@ -1,3 +1,4 @@
+//this will contain all data for the portfolio carosel 
 export const data = [
 {
   name: "When we clean scheduling app",

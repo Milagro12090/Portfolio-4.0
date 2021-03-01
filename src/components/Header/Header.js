@@ -1,7 +1,9 @@
+//importing react
 import React from "react";
-
+//import header.css
 import styles from "./header.module.css";
-
+//nav bar setup, connecting css styles
+//also added transparency to nav bar
 const Header = ({ list }) => {
   return (
     <div className={styles.header}>

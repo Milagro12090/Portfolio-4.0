@@ -1,12 +1,14 @@
+//import react, web animations and react reveal
 import React from "react";
 import useWebAnimations, { rubberBand } from "@wellyshen/use-web-animations";
 import Slide from "react-reveal/Slide";
-
+//import app css and module css
 import styles from "./about.module.css";
 import appStyles from "../../app.module.css";
+//use reaveal when page is refreshed
 const About = () => {
   const { ref: refRubber, getAnimation } = useWebAnimations({ ...rubberBand });
-
+  //return with slide tags and about.png
   return (
     <div className={styles.aboutContainer} id="About">
       <h1
@@ -22,9 +24,10 @@ const About = () => {
         <Slide right>
           <div className={styles.content}>
             <p>
-            I am an aspiring full stack developer living in Lakewood CO. I used to be a pizza chef, but after 4 years of doing that I decided to goto school and try to make something of myself. 
-              I attended Denver Universities coding bootcamp for 6 months. I did code for fun a little bit before attending but the school has taught me things I never could learn on my own and 
-              attending has been one of the best decisions I have made. 
+              I am currently attending a coding bootcamp through Denver University. This has been a 6 
+              month full stack course that has gone over everything from basic HTML and css, all the way 
+              to React.js and MERN stack. I am living in Lakewood with my girlfriend Merisa and our cat 
+              Ron. I am very excited to graduate and dive into the professional enviroment of software development. 
             </p>
           </div>
         </Slide>

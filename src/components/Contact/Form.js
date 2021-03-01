@@ -1,5 +1,6 @@
+//import contact css
 import styles from "./contact.module.css";
-
+//form will show up oppisite to Wanna get in touch
 function Form(){
   return (
     <div className={styles.form}>

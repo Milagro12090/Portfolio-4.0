@@ -1,10 +1,11 @@
+//import react this will hopefully show up on the right side
 import React from "react";
 
 function Author({ className }) {
   return (
     <div className={className}>
       <p>
-        Designed and developed By <strong>Riley Costello</strong>
+        Designed By <strong>Riley Costello</strong>
       </p>
     </div>
   );
